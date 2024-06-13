@@ -109,6 +109,7 @@ PRODUCT_PACKAGES += \
     libcamera2ndk_vendor \
     libgui_vendor \
     libstdc++_vendor \
+    libutilscallstack.vendor \
     vendor.qti.hardware.camera.device@1.0.vendor
 
 # Configstore
@@ -130,6 +131,7 @@ PRODUCT_PACKAGES += \
     gralloc.sm6150 \
     hwcomposer.sm6150 \
     memtrack.sm6150 \
+    libion.vendor \
     libqdMetaData \
     libqdMetaData.system \
     libtinyxml \
@@ -204,6 +206,7 @@ PRODUCT_PACKAGES += \
     android.hidl.manager@1.0.vendor
 
 PRODUCT_PACKAGES += \
+    libhidlmemory.vendor \
     libhidltransport \
     libhidltransport.vendor \
     libhwbinder \
@@ -324,10 +327,13 @@ PRODUCT_PACKAGES += \
 
 # QMI
 PRODUCT_PACKAGES += \
-    libqti_vndfwk_detect \
+    libcurl.vendor \
+    libjson \
+    libjsoncpp.vendor \
     libqti_vndfwk_detect.vendor \
     libvndfwk_detect_jni.qti \
-    libvndfwk_detect_jni.qti.vendor
+    libvndfwk_detect_jni.qti.vendor \
+    libsqlite.vendor
 
 # QTI
 PRODUCT_COPY_FILES += \
@@ -340,8 +346,9 @@ PRODUCT_PACKAGES += \
     android.hardware.radio.config@1.2.vendor \
     android.hardware.secure_element@1.2.vendor \
     android.hardware.radio.deprecated@1.0.vendor \
-    libjson \
+    libnetutils.vendor \
     librmnetctl \
+    libsqlite.vendor \
     libxml2
 
 # Rootdir
@@ -357,7 +364,9 @@ PRODUCT_COPY_FILES += \
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@2.0-service.multihal_x2 \
-    libsensorndkbridge
+    libdumpstateutil.vendor \
+    libsensorndkbridge \
+    libpower.vendor
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
@@ -396,6 +405,8 @@ PRODUCT_PACKAGES += \
     libwifi-hal-ctrl \
     libwifi-hal-qcom \
     libwpa_client \
+    libpng.vendor \
+    libprocessgroup.vendor \
     wpa_supplicant \
     wpa_supplicant.conf
 

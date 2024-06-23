@@ -1,8 +1,11 @@
 #
-# Copyright (C) 2022 The LineageOS Project
+# Copyright (C) 2022-2024 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
+
+# Add common definitions for Qualcomm
+$(call inherit-product, hardware/qcom-caf/common/common.mk)
 
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
